@@ -6,4 +6,7 @@
 
 Built using gatsby
 
-- `gatsby develop`: runs a live-reloading dev server
+- `npm run develop`: runs a live-reloading dev server
+- `npm run build`: builds the public folder locally
+- `npm run build:travis`: builds for travis gh-pages deploy
+

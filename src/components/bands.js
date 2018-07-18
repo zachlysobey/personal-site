@@ -1,15 +1,13 @@
 import React from 'react'
 
-import data from '../../data'
+import data from '../data'
 
-export const ExternalArticles = () => (
+export const Bands = () => (
   <div>
-    <h3>External Articles</h3>
-
-    <p>Articles and things I've written that are hosted elsewhere.</p>
+    <h3>Bands I've Been in</h3>
 
     <ul>
-      {data.externalArticles.map(({ url, title }) => (
+      {data.bands.map(({ url, title }) => (
         <li>
           <h4>{title}</h4>
           <p>

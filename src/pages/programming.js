@@ -1,16 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { YoutubePosts } from './youtube-posts'
-import { Bands } from './bands'
+import { ExternalArticles } from '../components/external-articles'
 
 export default () => (
   <div>
-    <h2>Music</h2>
+    <h2>Programming</h2>
 
-    <YoutubePosts />
-
-    <Bands />
+    <ExternalArticles />
 
     <Link to="/">back home</Link>
   </div>

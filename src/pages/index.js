@@ -15,5 +15,15 @@ export default () => (
         <Link to="/programming/">Programming</Link>
       </li>
     </ul>
+
+    <h3>Blog</h3>
+
+    <ul>
+      <li>
+        <Link to="/2018-07-21-hello-world">
+          <strong>2018-07-21</strong> Hello World
+        </Link>
+      </li>
+    </ul>
   </div>
 )

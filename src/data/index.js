@@ -1,15 +1,15 @@
 export default {
   youtubePosts: [
     {
-      url: 'https://www.youtube.com/watch?v=vvzMNFbN5Do',
+      url: 'https://youtu.be/vvzMNFbN5Do',
       title: '2018-07-14 "Changes" (acoustic)',
     },
     {
-      url: 'https://www.youtube.com/watch?v=WNV6VVozQ8w',
+      url: 'https://youtu.be/WNV6VVozQ8w',
       title: '2018-17-15 dark bass noodlings',
     },
     {
-      url: 'https://www.youtube.com/watch?v=yaZzQb3kUPM',
+      url: 'https://youtu.be/yaZzQb3kUPM',
       title: '2018-07-17',
     },
     {

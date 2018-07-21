@@ -12,6 +12,10 @@ export default {
       url: 'https://www.youtube.com/watch?v=yaZzQb3kUPM',
       title: '2018-07-17',
     },
+    {
+      url: 'https://youtu.be/grahnq78QjE',
+      title: '2018-07-21',
+    },
   ],
   externalArticles: [
     {

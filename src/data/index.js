@@ -16,6 +16,10 @@ export default {
       id: 'grahnq78QjE',
       title: '2018-07-21',
     },
+    {
+      id: 'YtVB1D6ojOM',
+      title: '2018-07-22',
+    },
   ],
   externalArticles: [
     {

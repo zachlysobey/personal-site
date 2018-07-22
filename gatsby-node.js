@@ -5,7 +5,7 @@
  */
 const path = require("path")
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
+exports.createPages = async ({ boundActionCreators, graphql }) => {
     const { createPage } = boundActionCreators
 
     const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
@@ -25,18 +25,17 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
     }`
 
-    return graphql(query)
-        .then(result => {
-            if (result.errors) {
-                return Promise.reject(result.errors)
-            }
-            result.data.allMarkdownRemark.edges
-                .forEach(({ node }) => {
-                    createPage({
-                        path: node.frontmatter.path,
-                        component: blogPostTemplate,
-                        context: {} // additional data can be passed via context
-                    })
-                })
-        })
+    const result = await graphql(query)
+
+    if (result.errors) {
+        return Promise.reject(result.errors)
+    }
+
+    const edges = result.data.allMarkdownRemark.edges
+
+    edges.forEach(edge => createPage({
+        path: edge.node.frontmatter.path,
+        component: blogPostTemplate,
+        context: {}
+    }))
 }

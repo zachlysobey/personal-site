@@ -8,9 +8,9 @@ export default () => (
     <div>
         <h2>Music</h2>
 
-        <YoutubePosts />
-
         <Bands />
+
+        <YoutubePosts />
 
         <Link to="/">back home</Link>
     </div>

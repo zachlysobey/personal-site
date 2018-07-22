@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-const path = require("path")
+const path = require('path')
 
 exports.createPages = async ({ boundActionCreators, graphql }) => {
     const { createPage } = boundActionCreators
@@ -33,9 +33,11 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
 
     const edges = result.data.allMarkdownRemark.edges
 
-    edges.forEach(edge => createPage({
-        path: edge.node.frontmatter.path,
-        component: blogPostTemplate,
-        context: {}
-    }))
+    edges.forEach((edge) =>
+        createPage({
+            path: edge.node.frontmatter.path,
+            component: blogPostTemplate,
+            context: {},
+        }),
+    )
 }

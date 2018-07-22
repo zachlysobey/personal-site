@@ -5,13 +5,13 @@ import { YoutubePosts } from '../components/youtube-posts'
 import { Bands } from '../components/bands'
 
 export default () => (
-  <div>
-    <h2>Music</h2>
+    <div>
+        <h2>Music</h2>
 
-    <YoutubePosts />
+        <YoutubePosts />
 
-    <Bands />
+        <Bands />
 
-    <Link to="/">back home</Link>
-  </div>
+        <Link to="/">back home</Link>
+    </div>
 )

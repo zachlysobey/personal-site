@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Video } from '../components/yt-video'
+
 import data from '../data'
 
 export const YoutubePosts = () => (
@@ -14,14 +16,15 @@ export const YoutubePosts = () => (
     </p>
 
     <ul>
-      {data.youtubePosts.map(({ url, title }) => (
-        <li>
+      {data.youtubePosts.reverse().map(({ id, title }, i) => (
+        <li key={i}>
           <h4>{title}</h4>
           <p>
-            <a href={url} title={title}>
-              {url}
+            <a href={"https://youtu.be/" + id} title={title}>
+              {"https://youtu.be/" + id}
             </a>
           </p>
+          <Video id={id}></Video>
         </li>
       ))}
     </ul>

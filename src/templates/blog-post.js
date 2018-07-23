@@ -7,7 +7,10 @@ export default function Template({ data }) {
         <div className="blog-post-container">
             <Helmet title={`Zach Lysobey - ${post.frontmatter.title}`} />
             <div className="blog-post">
-                <h1>{post.frontmatter.title}</h1>
+                <h2>
+                    <small>{post.frontmatter.date}</small>{' '}
+                    {post.frontmatter.title}
+                </h2>
                 <div
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: post.html }}

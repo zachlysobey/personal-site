@@ -9,12 +9,11 @@ export const Bands = () => (
         <ul>
             {data.bands.map(({ url, title }, i) => (
                 <li key={i}>
-                    <h4>{title}</h4>
-                    <p>
+                    <h4>
                         <a href={url} title={title}>
-                            {url}
+                            {title}
                         </a>
-                    </p>
+                    </h4>
                 </li>
             ))}
         </ul>

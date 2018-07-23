@@ -4,8 +4,10 @@ import { Video } from '../components/yt-video'
 
 import data from '../data'
 
+import './youtube-posts.css'
+
 export const YoutubePosts = () => (
-    <div>
+    <div className="youtube-posts">
         <h3>Daily Youtube Posts</h3>
 
         <p>
@@ -15,11 +17,11 @@ export const YoutubePosts = () => (
             <em> something</em> everyday at least.
         </p>
 
-        <ul>
+        <ul style={{ listStyleType: 'none' }}>
             {data.youtubePosts.reverse().map(({ id, title }, i) => (
                 <li key={i}>
                     <h4>{title}</h4>
-                    <p>
+                    <p style={{ float: 'right' }}>
                         <a href={'https://youtu.be/' + id} title={title}>
                             {'https://youtu.be/' + id}
                         </a>

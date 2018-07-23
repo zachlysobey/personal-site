@@ -11,8 +11,8 @@ export class Video extends React.Component {
         return (
             <div>
                 <iframe
-                    width="560"
-                    height="315"
+                    width="100%"
+                    height="250"
                     src={'https://www.youtube.com/embed/' + id}
                     frameBorder="0"
                     allowFullScreen="true"

@@ -14,6 +14,7 @@ const Header = ({ siteTitle }) => (
     >
         <div
             style={{
+                position: 'relative',
                 margin: '0 auto',
                 maxWidth: 960,
                 padding: '1.45rem 1.0875rem',
@@ -32,20 +33,20 @@ const Header = ({ siteTitle }) => (
             </h1>
 
             <HeaderNav />
-        </div>
 
-        <a href="https://github.com/zachlysobey/personal-site">
-            <img
-                src={githubLogo}
-                width="80px"
-                style={{
-                    position: 'absolute',
-                    top: '20px',
-                    right: '.5em',
-                    transform: 'rotate(45deg)',
-                }}
-            />
-        </a>
+            <a href="https://github.com/zachlysobey/personal-site">
+                <img
+                    src={githubLogo}
+                    width="80px"
+                    style={{
+                        position: 'absolute',
+                        top: '20px',
+                        right: '.5em',
+                        transform: 'rotate(45deg)',
+                    }}
+                />
+            </a>
+        </div>
     </header>
 )
 

@@ -5,8 +5,8 @@
       "component---src-pages-index-js-4ef42548f5485b65c168.js.map"
     ],
     "path---blog": [
-      "path---blog-2701bcf388718e1968eb.js",
-      "path---blog-2701bcf388718e1968eb.js.map"
+      "path---blog-1c44b1a4d688a1140271.js",
+      "path---blog-1c44b1a4d688a1140271.js.map"
     ],
     "path---": [
       "path----502eec0071c21f2a43ed.js",
@@ -67,14 +67,18 @@
       "path---2018-07-21-hello-world-eca3a66e788e6bb5cc5c.js.map"
     ],
     "app": [
-      "app-dc67b478a7ab60166d2c.js",
+      "app-f9f0cdbcd97a5b04085d.js",
       "build-js-styles.css",
-      "app-dc67b478a7ab60166d2c.js.map",
+      "app-f9f0cdbcd97a5b04085d.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---2016-05-01-books-for-a-js-developer": [
+      "path---2016-05-01-books-for-a-js-developer-55544989a816bbf67523.js",
+      "path---2016-05-01-books-for-a-js-developer-55544989a816bbf67523.js.map"
     ]
   }
 }

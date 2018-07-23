@@ -3,8 +3,10 @@ import Link from 'gatsby-link'
 
 import githubLogo from '../images/GitHub-Logos/GitHub_Logo_White.png'
 
+import { HeaderNav } from './header-nav'
+
 const Header = ({ siteTitle }) => (
-    <div
+    <header
         style={{
             background: 'rebeccapurple',
             marginBottom: '1.45rem',
@@ -17,7 +19,7 @@ const Header = ({ siteTitle }) => (
                 padding: '1.45rem 1.0875rem',
             }}
         >
-            <h1 style={{ margin: 0 }}>
+            <h1 style={{ margin: 0, display: 'inline-block' }}>
                 <Link
                     to="/"
                     style={{
@@ -28,6 +30,8 @@ const Header = ({ siteTitle }) => (
                     {siteTitle}
                 </Link>
             </h1>
+
+            <HeaderNav />
         </div>
 
         <a href="https://github.com/zachlysobey/personal-site">
@@ -42,7 +46,7 @@ const Header = ({ siteTitle }) => (
                 }}
             />
         </a>
-    </div>
+    </header>
 )
 
 export default Header

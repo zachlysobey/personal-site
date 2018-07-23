@@ -7,8 +7,8 @@ export const Bands = () => (
         <h3>Bands I've Been in</h3>
 
         <ul>
-            {data.bands.map(({ url, title }) => (
-                <li>
+            {data.bands.map(({ url, title }, i) => (
+                <li key={i}>
                     <h4>{title}</h4>
                     <p>
                         <a href={url} title={title}>

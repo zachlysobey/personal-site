@@ -14,9 +14,8 @@ export class Video extends React.Component {
                     width="560"
                     height="315"
                     src={'https://www.youtube.com/embed/' + id}
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen="true"
+                    frameBorder="0"
+                    allowFullScreen="true"
                 />
             </div>
         )

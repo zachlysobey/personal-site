@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Video } from '../youtube-video'
+import { Video } from './youtube-video'
 
 import * as data from '../data'
 

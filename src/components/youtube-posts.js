@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Video } from '../components/yt-video'
 
-import data from '../data'
+import * as data from '../data'
 
 import './youtube-posts.css'
 

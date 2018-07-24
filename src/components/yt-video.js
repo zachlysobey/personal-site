@@ -1,7 +1,5 @@
 import React from 'react'
 
-import data from '../data'
-
 export class Video extends React.Component {
     shouldComponentUpdate() {
         return false

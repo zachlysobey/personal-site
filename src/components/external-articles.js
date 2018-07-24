@@ -1,6 +1,6 @@
 import React from 'react'
 
-import data from '../data'
+import * as data from '../data'
 
 export const ExternalArticles = () => (
     <div>

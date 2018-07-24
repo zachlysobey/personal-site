@@ -20,6 +20,10 @@ export default {
             id: 'YtVB1D6ojOM',
             title: '2018-07-22',
         },
+        {
+            id: 'tKtvNyxD2c8',
+            title: '2018-07-23',
+        },
     ],
     externalArticles: [
         {

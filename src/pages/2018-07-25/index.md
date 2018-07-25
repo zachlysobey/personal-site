@@ -40,7 +40,7 @@ I got a kick out of writing this. __Why?__
 
 - because [*tagged* template string functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates) are weird.
 - because cows are fun
-- b/c I wrote some really weird/ugly code to go along with it.
+- because I wrote some really weird/ugly code to go along with it.
 
 For whatever reason, sometimes **it feels good to write bad code**.
 

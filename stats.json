@@ -4,13 +4,17 @@
       "component---src-pages-index-js-4ef42548f5485b65c168.js",
       "component---src-pages-index-js-4ef42548f5485b65c168.js.map"
     ],
+    "path---2019-01-21-truffle-solidity-tests": [
+      "path---2019-01-21-truffle-solidity-tests-021fb21d70070746834d.js",
+      "path---2019-01-21-truffle-solidity-tests-021fb21d70070746834d.js.map"
+    ],
     "path---2018-07-25-cow-log": [
       "path---2018-07-25-cow-log-9c5ad0c26dd651c61a96.js",
       "path---2018-07-25-cow-log-9c5ad0c26dd651c61a96.js.map"
     ],
     "path---blog": [
-      "path---blog-03c1d2d38307c4b609fe.js",
-      "path---blog-03c1d2d38307c4b609fe.js.map"
+      "path---blog-63f39e9f8a57b50ca5bb.js",
+      "path---blog-63f39e9f8a57b50ca5bb.js.map"
     ],
     "path---": [
       "path----502eec0071c21f2a43ed.js",
@@ -75,9 +79,9 @@
       "path---2018-07-21-hello-world-58644c487a6290ca1082.js.map"
     ],
     "app": [
-      "app-5874cff682b6e5b8e41b.js",
+      "app-12f64375286455d695ef.js",
       "build-js-styles.css",
-      "app-5874cff682b6e5b8e41b.js.map",
+      "app-12f64375286455d695ef.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [

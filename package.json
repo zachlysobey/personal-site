@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.247",
+    "gatsby": "^2.1.29",
     "gatsby-link": "^2.0.14",
     "gatsby-plugin-react-helmet": "^3.0.8",
     "gatsby-remark-prismjs": "^3.2.4",

@@ -13,8 +13,8 @@
       "path---2018-07-25-cow-log-9c5ad0c26dd651c61a96.js.map"
     ],
     "path---blog": [
-      "path---blog-63f39e9f8a57b50ca5bb.js",
-      "path---blog-63f39e9f8a57b50ca5bb.js.map"
+      "path---blog-c9a3445d919d1f6b330d.js",
+      "path---blog-c9a3445d919d1f6b330d.js.map"
     ],
     "path---": [
       "path----502eec0071c21f2a43ed.js",
@@ -78,10 +78,14 @@
       "path---2018-07-21-hello-world-58644c487a6290ca1082.js",
       "path---2018-07-21-hello-world-58644c487a6290ca1082.js.map"
     ],
+    "path---2019-06-20-blockstack": [
+      "path---2019-06-20-blockstack-74454d962280702667b4.js",
+      "path---2019-06-20-blockstack-74454d962280702667b4.js.map"
+    ],
     "app": [
-      "app-12f64375286455d695ef.js",
+      "app-fa332a480ef4de3def20.js",
       "build-js-styles.css",
-      "app-12f64375286455d695ef.js.map",
+      "app-fa332a480ef4de3def20.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [

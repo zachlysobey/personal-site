@@ -12,7 +12,7 @@ I got a 13" MacBook pro, the less-expensive version, no fancy touchbar.
 
 ## Blockstack
 
-I've recently become aware of a organization named "Blockstack".
+I've recently become aware of an organization named "Blockstack".
 
 > https://blockstack.org/
 

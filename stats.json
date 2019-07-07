@@ -13,8 +13,8 @@
       "path---2018-07-25-cow-log-9c5ad0c26dd651c61a96.js.map"
     ],
     "path---blog": [
-      "path---blog-a4ccf8fe8f8b0553a4d1.js",
-      "path---blog-a4ccf8fe8f8b0553a4d1.js.map"
+      "path---blog-48c22a31de555a0b31b1.js",
+      "path---blog-48c22a31de555a0b31b1.js.map"
     ],
     "path---": [
       "path----502eec0071c21f2a43ed.js",
@@ -27,6 +27,10 @@
     "path---2018-07-21-second-post": [
       "path---2018-07-21-second-post-95e502ec8d8960b595bb.js",
       "path---2018-07-21-second-post-95e502ec8d8960b595bb.js.map"
+    ],
+    "path---2019-07-07-blockstack-part-2": [
+      "path---2019-07-07-blockstack-part-2-a75c77b3ffbe0858f8d7.js",
+      "path---2019-07-07-blockstack-part-2-a75c77b3ffbe0858f8d7.js.map"
     ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-6726e2178c3283d4f75b.js",
@@ -83,9 +87,9 @@
       "path---2019-06-20-blockstack-1f063b329525e3b402ae.js.map"
     ],
     "app": [
-      "app-fa332a480ef4de3def20.js",
+      "app-d54497f4acdd40f8a9f0.js",
       "build-js-styles.css",
-      "app-fa332a480ef4de3def20.js.map",
+      "app-d54497f4acdd40f8a9f0.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [

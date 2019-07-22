@@ -1,15 +1,17 @@
 header nav {
-    display: inline-block;
+    display: block;
 }
 
 header nav ul {
     list-style-type: none;
-    margin: 0 0 0 1em;
+    margin: 0;
 }
 
 header nav li {
+    font-family: monospace;
     display: inline-block;
-    padding: 0 1em;
+    padding: 0 .75em;
+    margin: 0;
 }
 
 header nav a {

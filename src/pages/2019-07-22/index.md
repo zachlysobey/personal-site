@@ -20,7 +20,7 @@ I named it "note".
 
 ## Source
 
-```sh
+```shell
 function note {
     fileName="note_$(date +%F).md"
 
@@ -43,7 +43,7 @@ function note {
 
 ## Example Usage
 
-```sh
+```
 $ note vim
 ```
 

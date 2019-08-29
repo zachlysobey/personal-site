@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Layout from '../components/layout'
 import { YoutubePosts } from '../components/youtube-posts'
 import { Bands } from '../components/bands'
 
 export default () => (
-    <div>
+    <Layout>
         <h2>Music</h2>
 
         <Bands />
@@ -13,5 +14,5 @@ export default () => (
         <YoutubePosts />
 
         <Link to="/">back home</Link>
-    </div>
+    </Layout>
 )

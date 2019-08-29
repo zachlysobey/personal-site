@@ -13,8 +13,8 @@
       "path---2018-07-25-cow-log-9c5ad0c26dd651c61a96.js.map"
     ],
     "path---blog": [
-      "path---blog-2c9c8c4e790c9b51c99c.js",
-      "path---blog-2c9c8c4e790c9b51c99c.js.map"
+      "path---blog-618d134ea1cc8aa3f929.js",
+      "path---blog-618d134ea1cc8aa3f929.js.map"
     ],
     "path---": [
       "path----502eec0071c21f2a43ed.js",
@@ -29,8 +29,8 @@
       "path---2018-07-21-second-post-95e502ec8d8960b595bb.js.map"
     ],
     "path---2019-07-07-blockstack-part-2": [
-      "path---2019-07-07-blockstack-part-2-a75c77b3ffbe0858f8d7.js",
-      "path---2019-07-07-blockstack-part-2-a75c77b3ffbe0858f8d7.js.map"
+      "path---2019-07-07-blockstack-part-2-94ef11a42a34ee654c23.js",
+      "path---2019-07-07-blockstack-part-2-94ef11a42a34ee654c23.js.map"
     ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-6726e2178c3283d4f75b.js",
@@ -47,6 +47,10 @@
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---2019-08-29-git-merkle-tree-fun": [
+      "path---2019-08-29-git-merkle-tree-fun-fc00d87f7578c6b1ac8c.js",
+      "path---2019-08-29-git-merkle-tree-fun-fc00d87f7578c6b1ac8c.js.map"
     ],
     "path---2019-07-22-note-utility": [
       "path---2019-07-22-note-utility-cb64ee29bd8294d9dfaa.js",
@@ -91,9 +95,9 @@
       "path---2019-06-20-blockstack-1f063b329525e3b402ae.js.map"
     ],
     "app": [
-      "app-b9251dcc2ea1d7669584.js",
+      "app-e979811263e176e5a5d3.js",
       "build-js-styles.css",
-      "app-b9251dcc2ea1d7669584.js.map",
+      "app-e979811263e176e5a5d3.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [

@@ -1,0 +1,184 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/personal-site/component---src-layouts-index-js-d20bb3a2278bd2a1875a.js" as="script"/><link rel="preload" href="/personal-site/component---src-templates-blog-post-js-6726e2178c3283d4f75b.js" as="script"/><link rel="preload" href="/personal-site/path---2019-08-29-git-merkle-tree-fun-fc00d87f7578c6b1ac8c.js" as="script"/><link rel="preload" href="/personal-site/app-e979811263e176e5a5d3.js" as="script"/><link rel="preload" href="/personal-site/commons-403258ad126d5c26671b.js" as="script"/><title data-react-helmet="true">Zach Lysobey - Having some fun with git commit hashes</title><meta data-react-helmet="true" name="description" content="Sample"/><meta data-react-helmet="true" name="keywords" content="sample, something"/><style id="gatsby-inlined-css">header nav{display:block}header nav ul{list-style-type:none;margin:0}header nav li{font-family:monospace;display:inline-block;padding:0 .75em;margin:0}header nav a{color:#fff;text-decoration:none}header nav a:hover{text-decoration:underline}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt","kern"}img{max-width:100%;margin:0 0 1.45rem;padding:0}h1{font-size:2.25rem}h1,h2{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{margin:0 0 1.45rem 1.45rem;padding:0;list-style-position:outside;list-style-image:none}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{padding:0;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}pre,table{margin:0 0 1.45rem}table{padding:0;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{margin:0 0 calc(1.45rem - 1px);padding:0;background:rgba(0,0,0,.2);border:none;height:1px}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0;padding-top:.2em;padding-bottom:.2em}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.youtube-posts ul{margin-left:0;color:#fff}.youtube-posts li:nth-child(2n){background-color:#639}.youtube-posts li:nth-child(odd){background-color:#a6e}.youtube-posts h4{margin-bottom:0;font-size:2em;display:inline-block;padding:.5em}.youtube-posts ul a{color:#ddd;font-style:italic;padding:.2em}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="-963757292"><!-- react-empty: 2 --><header style="background:rebeccapurple;margin-bottom:1.45rem;" data-reactid="3"><div style="position:relative;margin:0 auto;max-width:960px;padding:1.45rem 1.0875rem;" data-reactid="4"><h1 style="margin:0;display:inline-block;" data-reactid="5"><a style="color:white;text-decoration:none;" href="/personal-site/" data-reactid="6">Zach Lysobey</a></h1><nav data-reactid="7"><ul data-reactid="8"><li data-reactid="9"><a href="/personal-site/music" data-reactid="10">Music</a></li><li data-reactid="11"><a href="/personal-site/programming" data-reactid="12">Programming</a></li><li data-reactid="13"><a href="/personal-site/blog" data-reactid="14">Blog</a></li></ul></nav><a href="https://github.com/zachlysobey/personal-site" data-reactid="15"><img src="/personal-site/static/GitHub_Logo_White.064ace47.png" width="80px" style="position:absolute;top:20px;right:.5em;transform:rotate(45deg);" data-reactid="16"/></a></div></header><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0;" data-reactid="17"><div class="blog-post-container" data-reactid="18"><!-- react-empty: 19 --><div class="blog-post" data-reactid="20"><h2 data-reactid="21"><small data-reactid="22">August 29, 2019</small><!-- react-text: 23 --> <!-- /react-text --><!-- react-text: 24 -->Having some fun with git commit hashes<!-- /react-text --></h2><div class="blog-post-content" data-reactid="25"><p>I've been brewing a fun idea for a while, and think its time to get a start.</p>
+<p>Its around git commit hashes and history.</p>
+<p>I think this idea is best illustrated with an example.</p>
+<p>Currently, if I look at my git history for this project using <code class="language-text">git log --oneline</code> it looks something like this:</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">1b04167 (content) fix markdown code-block language in 2019-07-22
+2de6f6a (display) update header-nav styles
+ef2786e (chore) replace gatsby starter package.json content
+5cdf6a2 (chore) fix package.json repository field
+21dbc9b (content) add post about &#39;notes&#39; util
+57b2a7e (content) &#39;finish&#39; 2019-07-07 blockstack part 2
+3a9aed4 (content) continue work on 2019-07-07 blockstack part 2
+0414b17 (content) start authoring 2019-07-07 blockstack part 2
+b48c2a6 (content) fix typo</code></pre>
+      </div>
+<p>Note the <em>random</em> commit hashes (<code class="language-text">1b04167</code>, <code class="language-text">2de6f6a</code>, ...).</p>
+<p>I want to have some fun with this. I'd like to be able to have the git history look like:</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">0000000 (content) fix markdown code-block language in 2019-07-22
+0000000 (display) update header-nav styles
+0000000 (chore) replace gatsby starter package.json content
+0000000 (chore) fix package.json repository field
+0000000 (content) add post about &#39;notes&#39; util
+0000000 (content) &#39;finish&#39; 2019-07-07 blockstack part 2
+0000000 (content) continue work on 2019-07-07 blockstack part 2
+0000000 (content) start authoring 2019-07-07 blockstack part 2
+0000000 (content) fix typo</code></pre>
+      </div>
+<p>or</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">1234567 (content) fix markdown code-block language in 2019-07-22
+2345678 (display) update header-nav styles
+3456789 (chore) replace gatsby starter package.json content
+4567890 (chore) fix package.json repository field
+5678901 (content) add post about &#39;notes&#39; util
+6789012 (content) &#39;finish&#39; 2019-07-07 blockstack part 2
+7890123 (content) continue work on 2019-07-07 blockstack part 2
+8901234 (content) start authoring 2019-07-07 blockstack part 2
+9012345 (content) fix typo</code></pre>
+      </div>
+<p>Really I'd like it to be flexible to create <em>any</em> target hash or pattern of hashes, etc... But that's probably out of scope for this first iteration. Just a leading zero or two would be pretty cool to pull off.</p>
+<p>A few things to note:</p>
+<ul>
+<li>the hashes are actually much longer than the abbreviated version in the <code class="language-text">--oneline</code> git log output. (<code class="language-text">1b04167441c746dd26e88c42eab692f635c8a1b4</code> for example)</li>
+<li>these commit <em>hashes</em> are cryptographic SHA1 hashes of the commit content.</li>
+<li>the commit content includes the code contained at that commit, the parent commit info, the commit message, etc...</li>
+<li><em>any</em> change to a commit contents will create a totally new <em>random</em> commit hash. </li>
+</ul>
+<p>We can <em>amend</em> a commit over and over making a tiny change and then updating the commit, each time essentially rolling the dice on a new commit hash. If we do this enough times we can theoretically get whatever commit hash we want, though if we target too many digits, it will quickly take too much computational power than we have. This process is essentially the same "proof-of-work" process that Bitcoin uses to mine blocks. As an example, if we want only want to ensure a <code class="language-text">0</code> as the first digit of the hash, we would, on average, need to "roll the dice" 16 times. (this is hexidecimal: <code class="language-text">0</code>-<code class="language-text">f</code>). 2 leading zeros would be 16^2 or 256 dice rolls. 5 leading zeros is 16^5, which is odds worse than one in a million! Its likely we'll not get quite up to 5 digits in this project, but we'll try to push the boundaries.</p>
+<p>Lets dive in and write some code. I'm creating a new git repo named <code class="language-text">git-rehasher</code>.</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">$ mkdir git-rehasher
+$ cd git-rehasher
+$ git init</code></pre>
+      </div>
+<p>And for now, lets create a blank README file and get our first commit</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">$ touch README.md
+$ git add .
+$ git commit -m &quot;add readme&quot;</code></pre>
+      </div>
+<p>Lets check out our commit hash</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">$ git log --oneline
+9320f6a (HEAD -&gt; master) add readme</code></pre>
+      </div>
+<p>To illustrate what I want to do with a script, I'm going to manually get that first digit to be a zero by making small changes to the commit.</p>
+<p>We can use <code class="language-text">git commit --amend</code> to update a previous commit. (<code class="language-text">--am</code> can be used as shorthand for <code class="language-text">--amend</code>, but I'm using the long form for clarity)</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">$ git commit --amend -m &quot;add readme take 2&quot;
+$ git log --oneline
+748f6bd (HEAD -&gt; master) add readme take 2</code></pre>
+      </div>
+<p>I still don't have a zero :(</p>
+<p>But I <em>can</em> repeat this process, changing the commit message, which will change the commit hash until I get a zero:</p>
+<p>I'll change the commit in a methodical way, by appending a number to the message which I'll increment each time I don't get a hash that I like. Any small change like this ensures a new, unique commit hash each time. In cryptographic jargon we call this "incrementing a nonce" so I'll use that terminology.</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">$ git commit --amend -m &quot;add readme (nonce: 2)&quot;
+# 60a4451
+$ git commit --amend -m &quot;add readme (nonce: 3)&quot;
+# ac76260
+$ git commit --amend -m &quot;add readme (nonce: 4)&quot;
+# 855cc36
+$ git commit --amend -m &quot;add readme (nonce: 5)&quot;
+# 1db29c6
+$ git commit --amend -m &quot;add readme (nonce: 6)&quot;
+# 1759cc1
+$ git commit --amend -m &quot;add readme (nonce: 7)&quot;
+# a29a1da
+$ git commit --amend -m &quot;add readme (nonce: 8)&quot;
+# 7c2489d
+$ git commit --amend -m &quot;add readme (nonce: 9)&quot;
+# 095467e</code></pre>
+      </div>
+<p>By our 9th try, we get that leading zero we were looking for! <code class="language-text">095467e</code></p>
+<p>I'm not much of a shell scripter, but lets figure out how to automate this.</p>
+<p>First we want a way to <em>test</em> whether the commit at our <code class="language-text">HEAD</code> matches are target output. In this case, checking if the commit hash has a leading zero.</p>
+<p>Lets start writing a little script</p>
+<p>Create a <code class="language-text">re-hash.sh</code> file and give execute permissions on it:</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">$ touch re-hash.sh
+$ chmod +x ./re-hash.sh</code></pre>
+      </div>
+<p>Now lets put some stuff in there. I'll use <code class="language-text">git rev-parse HEAD</code> to gert the current commit hash.</p>
+<div class="gatsby-highlight" data-language="bash">
+      <pre class="language-bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token function">git</span> rev-parse HEAD</code></pre>
+      </div>
+<p>Lets run it to make sure it works:</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">$ ./re-hash.sh       
+095467e82a3e93b3a8370a5e536799f30f02e819% </code></pre>
+      </div>
+<p>All-right, we're off to a good start. Lets try to put that hash into a variable. (baby steps)</p>
+<div class="gatsby-highlight" data-language="bash">
+      <pre class="language-bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+
+commit_hash<span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> rev-parse HEAD<span class="token variable">)</span></span>
+<span class="token keyword">echo</span> <span class="token string">"commit hash: <span class="token variable">$commit_hash</span>"</span></code></pre>
+      </div>
+<p>And execute it:</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">$ ./re-hash.sh       
+095467e82a3e93b3a8370a5e536799f30f02e819% </code></pre>
+      </div>
+<p>Cool it still works.</p>
+<p>Now to test the hash:</p>
+<div class="gatsby-highlight" data-language="bash">
+      <pre class="language-bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+
+commit_hash<span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> rev-parse HEAD<span class="token variable">)</span></span>
+<span class="token keyword">echo</span> commit hash: <span class="token variable">$commit_hash</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$commit_hash</span> <span class="token operator">==</span> 0* <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+<span class="token keyword">then</span>
+    <span class="token keyword">echo</span> <span class="token string">"has leading zero"</span>
+<span class="token keyword">else</span>
+    <span class="token keyword">echo</span> <span class="token string">"no leading zero"</span>
+<span class="token keyword">fi</span></code></pre>
+      </div>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">./re-hash.sh
+commit_hash=095467e82a3e93b3a8370a5e536799f30f02e819
+has leading zero</code></pre>
+      </div>
+<p>Progress!</p>
+<p>I want to commit this progress, but it'd be cool to have another leading zero in the commit message, and I don't want to do it again manually. Lets make our script actually commit, and amend in a loop until it gets that leading zero. Actually... lets update it to be <em>two</em> leading zeros from now on.</p>
+<div class="gatsby-highlight" data-language="bash">
+      <pre class="language-bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+
+commit_hash<span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> rev-parse HEAD<span class="token variable">)</span></span>
+<span class="token keyword">echo</span> <span class="token string">"commit hash: <span class="token variable">$commit_hash</span>"</span>
+
+nonce<span class="token operator">=</span>0
+<span class="token keyword">while</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$commit_hash</span> <span class="token operator">!=</span> 00* <span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token keyword">do</span>
+  <span class="token function">git</span> commit --amend -m <span class="token string">"commiting! (nonce=<span class="token variable">$nonce</span>)"</span> <span class="token operator">></span>/dev/null
+  commit_hash<span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> rev-parse HEAD<span class="token variable">)</span></span>
+  <span class="token keyword">echo</span> <span class="token string">"<span class="token variable">$commit_hash</span> (nonce: <span class="token variable">$nonce</span>)"</span>
+  <span class="token variable"><span class="token punctuation">((</span>nonce<span class="token operator">++</span><span class="token punctuation">))</span></span>
+<span class="token keyword">done</span></code></pre>
+      </div>
+<p>This script is far from perfect but I think I'm happy with it for a first pass. It will <em>rewrite</em> the most recent commit message until it matches the given pattern.</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">$ ./re-hash.sh
+commit hash: 1f311397e86379dcd5850ffb605a266aacb2ba60
+9d7cebea2a71f3966ba0078878f718aab4bfc07e (nonce: 0)
+6141daafa01a933c1edf25105d573889c9adb216 (nonce: 1)
+# (omitted a bunch of output lines here...)
+4d936e0c96c1099bd5dadd9c2a9457b985d5f26c (nonce: 179)
+37dbcf57988d345d7f46d8c567af2d3bc008b712 (nonce: 180)
+00db7759a8555d2fd279ee0020942b99fddea64a (nonce: 181)</code></pre>
+      </div>
+<p><strong>See <a href="https://github.com/zachlysobey/git-rehasher">https://github.com/zachlysobey/git-rehasher</a> for the final product</strong></p>
+<h2>What's next?</h2>
+<ul>
+<li>re-use the original commit message, appending a incrementing nonce</li>
+<li>option to re-write entire commit history rather than just a single commit at a time</li>
+<li>configurable target pattern as a CLI argument</li>
+<li>multi-line pattern support</li>
+<li>Usage as a precommit hook</li>
+<li>performance optimizations? Just 2 leading characters takes a few seconds, and any more quickly becomes too much.</li>
+</ul></div></div></div></div></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-e979811263e176e5a5d3.js","107818501498521":"component---src-templates-blog-post-js-6726e2178c3283d4f75b.js","162898551421021":"component---src-pages-404-js-247a339d734a82464a2e.js","212839066777427":"component---src-pages-blog-js-f1481332a2031b2f89c9.js","35783957827783":"component---src-pages-index-js-4ef42548f5485b65c168.js","203914128700847":"component---src-pages-music-js-488105f7b51b257cde47.js","129138649832519":"component---src-pages-programming-js-aa65a68c1babd9aa0aa9.js","60335399758886":"path----502eec0071c21f2a43ed.js","155310338907026":"path---2019-08-29-git-merkle-tree-fun-fc00d87f7578c6b1ac8c.js","157061691965910":"path---2019-07-22-note-utility-cb64ee29bd8294d9dfaa.js","90784177564858":"path---2019-07-07-blockstack-part-2-94ef11a42a34ee654c23.js","226144891281532":"path---2019-06-20-blockstack-1f063b329525e3b402ae.js","42093647816350":"path---2019-01-21-truffle-solidity-tests-021fb21d70070746834d.js","44139231292542":"path---2018-07-25-cow-log-9c5ad0c26dd651c61a96.js","73391448117325":"path---2018-07-24-code-samples-25deee2969153c406184.js","77516813037817":"path---2018-07-21-second-post-95e502ec8d8960b595bb.js","223422856821382":"path---2018-07-21-hello-world-58644c487a6290ca1082.js","274910075758423":"path---2016-05-01-books-for-a-js-developer-55544989a816bbf67523.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","49683490770531":"path---blog-618d134ea1cc8aa3f929.js","142629428675168":"path---index-a0e39f21c11f6a62c5ab.js","192093361865127":"path---music-a0e39f21c11f6a62c5ab.js","218276678215892":"path---programming-a0e39f21c11f6a62c5ab.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","114276838955818":"component---src-layouts-index-js-d20bb3a2278bd2a1875a.js"}/*]]>*/</script><script>/*<![CDATA[*/!function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",["/personal-site/commons-403258ad126d5c26671b.js","/personal-site/app-e979811263e176e5a5d3.js","/personal-site/path---2019-08-29-git-merkle-tree-fun-fc00d87f7578c6b1ac8c.js","/personal-site/component---src-templates-blog-post-js-6726e2178c3283d4f75b.js","/personal-site/component---src-layouts-index-js-d20bb3a2278bd2a1875a.js"])/*]]>*/</script></body></html>

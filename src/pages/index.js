@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Layout from '../components/layout'
+
 export default () => (
-    <div>
+    <Layout>
         <h2>My new home on the Internet</h2>
 
         <p>Playing around with creating a new site using Gatsby.js</p>
@@ -18,5 +20,5 @@ export default () => (
                 <Link to="/blog/">Blog</Link>
             </li>
         </ul>
-    </div>
+    </Layout>
 )

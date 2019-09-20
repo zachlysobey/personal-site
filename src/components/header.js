@@ -20,7 +20,13 @@ const Header = ({ siteTitle }) => (
                 padding: '1.45rem 1.0875rem',
             }}
         >
-            <h1 style={{ margin: 0, display: 'inline-block' }}>
+            <h1
+                style={{
+                    margin: 0,
+                    display: 'inline-block',
+                    textShadow: '#000 2px 2px 4px',
+                }}
+            >
                 <Link
                     to="/"
                     style={{

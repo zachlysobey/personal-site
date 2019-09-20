@@ -2,6 +2,7 @@
 path: "/2019-01-21-truffle-solidity-tests"
 date: "2019-01-21"
 title: "Leveraging a Contract's ABI in truffle/solidity tests"
+tags: ["programming", "blockchain", "ethereum", "testing", "solidity", "truffle"]
 ---
 
 Recently I've been writing a lot of *solidity* code for "smart contracts" on the Ethereum blockchain. Specifically using the [*Truffle* framework](https://truffleframework.com/truffle)

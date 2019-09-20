@@ -2,6 +2,7 @@
 path: "/2019-07-22-note-utility"
 date: "2019-07-22"
 title: "A fun little CLI utility for writing markdown notes"
+tags: ["programming", "shell", "cli", "markdown"]
 ---
 
 I just made a fun command-line function to easily create markdown notes from the command line.

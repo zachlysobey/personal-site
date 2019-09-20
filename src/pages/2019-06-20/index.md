@@ -2,6 +2,7 @@
 path: "/2019-06-20-blockstack"
 date: "2019-06-20"
 title: "Building a Blockstack App"
+tags: ["programming", "blockchain", "blockstack"]
 ---
 
 > Long time no see, Blog.

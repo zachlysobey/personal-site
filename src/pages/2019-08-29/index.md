@@ -2,6 +2,7 @@
 path: "/2019-08-29-git-merkle-tree-fun"
 date: "2019-08-29"
 title: "Having some fun with git commit hashes"
+tags: ["programming", "git", "cryptography"]
 ---
 
 I've been brewing a fun idea for a while, and think its time to get a start.

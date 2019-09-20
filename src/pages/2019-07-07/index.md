@@ -2,6 +2,8 @@
 path: "/2019-07-07-blockstack-part-2"
 date: "2019-07-07"
 title: "Building a Blockstack App (part 2)"
+tags: ["programming", "blockchain", "blockstack"]
+
 ---
 
 > Make sure to read [Part one](./2019-07-07-blockstack-part) of this project / blog post first.

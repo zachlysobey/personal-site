@@ -2,6 +2,7 @@
 path: "/2016-05-01-books-for-a-js-developer"
 date: "2016-05-01"
 title: "Books for a JavaScript developer"
+tags: ["javascript", "books", "programming"]
 ---
 
 *NOTE: originally hosted at http://zach.lysobey.com/books-for-a-javascript-developer*

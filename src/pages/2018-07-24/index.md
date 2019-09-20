@@ -2,6 +2,7 @@
 path: "/2018-07-24-code-samples"
 date: "2018-07-24"
 title: "Code Samples"
+tags: ["programming", "gatsby"]
 ---
 
 I can now syntax highlight my code samples in MarkDown blogposts via [gatsby-remark-prismjs](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/)!

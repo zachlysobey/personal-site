@@ -2,6 +2,7 @@
 path: "/2018-07-25-cow-log"
 date: "2018-07-25"
 title: "Cow Logging and Acoustic Metal"
+tags: ["programming", "shell"]
 ---
 
 Today (the 24th really), I worked from home. And I created some stuff after work!

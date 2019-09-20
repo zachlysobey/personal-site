@@ -2,6 +2,7 @@
 path: "/2019-08-30-enjoying-unemployment"
 date: "2019-08-30"
 title: "Life as an unemployed software developer"
+tags: ["programming", "personal", "blog"]
 ---
 
 I left my job at AlphaPoint, and have been unemployed for most of August. There are more than one or two reasons for this move, and some nuance which I won't be touching on here (ask me if you're really curious). This post is to shed some light on what I have been doing recently, and the choices I'm in the process of making.

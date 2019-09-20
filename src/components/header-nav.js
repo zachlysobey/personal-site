@@ -5,16 +5,16 @@ import './header-nav.css'
 
 const navItems = [
     {
+        name: 'Home',
+        link: '/',
+    },
+    {
         name: 'Music',
         link: '/music',
     },
     {
         name: 'Programming',
         link: '/programming',
-    },
-    {
-        name: 'Blog',
-        link: '/blog',
     },
 ]
 

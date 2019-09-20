@@ -6,6 +6,7 @@ import Helmet from 'react-helmet'
 import Header from './header'
 
 import './layout.css'
+import './blog-post.css'
 
 // import 'prismjs/themes/prism.css'
 // import 'prismjs/themes/prism-tomorrow.css'

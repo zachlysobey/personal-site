@@ -1,0 +1,30 @@
+.blog-post .date {
+    display: block;
+    color: #666;
+    font-size: .65em;
+    font-style: italic;
+}
+
+.blog-post.preview a {
+    text-decoration: none;
+}
+.blog-post.preview a,
+.blog-post.preview a:visited {
+    color: rebeccapurple;
+}
+.blog-post.preview a:hover {
+    text-decoration: underline;
+}
+
+.blog-post.preview .tag-list {
+    margin-left: 0;
+}
+.blog-post.preview .tag-list li {
+    font-size: .75em;
+    font-family: monospace;
+    list-style-type: none;
+    border: 1px solid #333;
+    padding: .125em;
+    margin-right: .125em;
+    display: inline-block;
+}

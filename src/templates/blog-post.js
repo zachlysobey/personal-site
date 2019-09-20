@@ -11,7 +11,7 @@ export default function Template({ data }) {
                 <Helmet title={`Zach Lysobey - ${post.frontmatter.title}`} />
                 <div className="blog-post">
                     <h2>
-                        <small>{post.frontmatter.date}</small>{' '}
+                        <small className="date">{post.frontmatter.date}</small>{' '}
                         {post.frontmatter.title}
                     </h2>
                     <div

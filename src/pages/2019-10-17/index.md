@@ -57,36 +57,40 @@ Note that many of the commit messages are the same (or similar), but none of the
 
 **The `react` branch**:
 
-* `e7a42f1` 👷 add github actions workflow
-* `0252d39` ✨ Hello, Redux
-* `356f114` ➕ add dependency on react-redux ^7.1.1
-* `97b595f` ➕ add dependency on redux-starter-kit ^0.8.1
-* `b45427b` 🔥 remove some create-react-app cruft
-* `24984ae` 💄 add 'prettier' pre-commit hook
-* `6aa15e6` 🎨 run prettier on existing code
-* `8d8c143` 💄 add prettier
-* `6670daf` 🔧 disable lockfiles with .npmrc
-* `020258f` 📝 add contributing guide
-* `ab270ad` 📝 add blank github pull-request template
-* `6a4cacf` 📝 add blank github issue template
-* `1d709c7` 📝 update README.md
-* `cb11e0f` 🔧 remove 'eject' npm run-script
-* `86e58c9` 🎉 npx create-react-app .
+```
+* e7a42f1 👷 add github actions workflow
+* 0252d39 ✨ Hello, Redux
+* 356f114 ➕ add dependency on react-redux ^7.1.1
+* 97b595f ➕ add dependency on redux-starter-kit ^0.8.1
+* b45427b 🔥 remove some create-react-app cruft
+* 24984ae 💄 add 'prettier' pre-commit hook
+* 6aa15e6 🎨 run prettier on existing code
+* 8d8c143 💄 add prettier
+* 6670daf 🔧 disable lockfiles with .npmrc
+* 020258f 📝 add contributing guide
+* ab270ad 📝 add blank github pull-request template
+* 6a4cacf 📝 add blank github issue template
+* 1d709c7 📝 update README.md
+* cb11e0f 🔧 remove 'eject' npm run-script
+* 86e58c9 🎉 npx create-react-app .
+```
 
 **The `nodejs` branch**
 
-* `f03a873` 👷 add github actions workflow
-* `c5f661b` ✅ add chai-as-promised
-* `8ff74d9` ✅ add chai assertions
-* `a9d4633` ✅ add mocha
-* `6c6fc8d` 💄 add 'prettier' pre-commit hook
-* `6508b9a` 💄 add 'prettier'
-* `98f7e5f` 🎉 Hello, World!
-* `cd160b4` 📝 add contributing guide
-* `7c468ca` 📝 add blank github pull-request template
-* `b54bb12` 📝 add blank github issue template
-* `0f151b5` 📝 add README.md
-* `617f525` 🎉 npm init
+```
+* f03a873 👷 add github actions workflow
+* c5f661b ✅ add chai-as-promised
+* 8ff74d9 ✅ add chai assertions
+* a9d4633 ✅ add mocha
+* 6c6fc8d 💄 add 'prettier' pre-commit hook
+* 6508b9a 💄 add 'prettier'
+* 98f7e5f 🎉 Hello, World!
+* cd160b4 📝 add contributing guide
+* 7c468ca 📝 add blank github pull-request template
+* b54bb12 📝 add blank github issue template
+* 0f151b5 📝 add README.md
+* 617f525 🎉 npm init
+```
 
 ## What's next?
 

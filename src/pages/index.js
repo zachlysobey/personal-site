@@ -3,35 +3,37 @@ import Link from 'gatsby-link'
 
 import Layout from '../components/layout'
 
+const BlogPostPreview = ({ frontmatter, excerpt }) => (
+    <div className="blog-post preview">
+        <h2>
+            <small className="date">{frontmatter.date}</small>{' '}
+            <Link to={frontmatter.path}>{frontmatter.title}</Link>
+        </h2>
+
+        <p>{excerpt}</p>
+
+        <ul className="tag-list">
+            {(frontmatter.tags || []).map((tag, i) => (
+                <li key={i}>#{tag}</li>
+            ))}
+        </ul>
+    </div>
+)
+
 export default ({ data }) => {
     const { edges: posts } = data.allMarkdownRemark
+    const blogPostsContent = posts
+        .filter((post) => post.node.frontmatter.title.length > 0)
+        .map(({ node }) => (
+            <BlogPostPreview
+                key={node.id}
+                excerpt={node.excerpt}
+                frontmatter={node.frontmatter}
+            />
+        ))
     return (
         <Layout>
-            <div className="blog-posts">
-                {posts
-                    .filter((post) => post.node.frontmatter.title.length > 0)
-                    .map(({ node }) => {
-                        const { frontmatter, id, excerpt } = node
-                        const { date, path, title, tags } = frontmatter
-                        return (
-                            <div className="blog-post preview" key={id}>
-                                <h2>
-                                    <small className="date">{date}</small>{' '}
-                                    <Link to={path}>{title}</Link>
-                                </h2>
-
-                                <p>{excerpt}</p>
-
-                                <ul className="tag-list">
-                                    <span></span>
-                                    {(tags || []).map((tag, i) => (
-                                        <li key={i}>#{tag}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )
-                    })}
-            </div>
+            <div className="blog-posts">{blogPostsContent}</div>
         </Layout>
     )
 }

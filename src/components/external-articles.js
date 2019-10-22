@@ -2,8 +2,10 @@ import React from 'react'
 
 import * as data from '../data'
 
+import './external-articles.css'
+
 export const ExternalArticles = () => (
-    <div>
+    <div class="external-articles">
         <h3>External Articles</h3>
 
         <p>Articles and things I've written that are hosted elsewhere.</p>
@@ -11,12 +13,11 @@ export const ExternalArticles = () => (
         <ul>
             {data.externalArticles.map(({ url, title }, i) => (
                 <li key={i}>
-                    <h4>{title}</h4>
-                    <p>
+                    <h4>
                         <a href={url} title={title}>
-                            {url}
+                            (Lifion Engineering Blog) {title}
                         </a>
-                    </p>
+                    </h4>
                 </li>
             ))}
         </ul>

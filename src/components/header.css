@@ -1,5 +1,12 @@
 .site-header {
     background: rebeccapurple;
+    background: linear-gradient(
+        90deg,
+        black 0%,
+        rebeccapurple 15%,
+        rebeccapurple 100%
+    );
+    box-shadow: inset 10px -5px 10px black;
     margin-bottom: 1.45rem;
 }
 

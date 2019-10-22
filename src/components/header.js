@@ -5,52 +5,24 @@ import githubLogo from '../images/GitHub-Logos/GitHub_Logo_White.png'
 
 import { HeaderNav } from './header-nav'
 
+import './header.css'
+
 const Header = ({ siteTitle }) => (
-    <header
-        style={{
-            background: 'rebeccapurple',
-            marginBottom: '1.45rem',
-        }}
-    >
-        <div
-            style={{
-                position: 'relative',
-                margin: '0 auto',
-                maxWidth: 960,
-                padding: '1.45rem 1.0875rem',
-            }}
-        >
-            <h1
-                style={{
-                    margin: 0,
-                    display: 'inline-block',
-                    textShadow: '#000 2px 2px 4px',
-                }}
-            >
-                <Link
-                    to="/"
-                    style={{
-                        color: 'white',
-                        textDecoration: 'none',
-                    }}
-                >
+    <header className="site-header">
+        <div className="header-body">
+            <h1>
+                <Link to="/" className="header-link">
                     {siteTitle}
                 </Link>
             </h1>
 
             <HeaderNav />
 
-            <a href="https://github.com/zachlysobey/personal-site">
-                <img
-                    src={githubLogo}
-                    width="80px"
-                    style={{
-                        position: 'absolute',
-                        top: '20px',
-                        right: '.5em',
-                        transform: 'rotate(45deg)',
-                    }}
-                />
+            <a
+                className="github-link"
+                href="https://github.com/zachlysobey/personal-site"
+            >
+                <img src={githubLogo} alt="GitHub" />
             </a>
         </div>
     </header>

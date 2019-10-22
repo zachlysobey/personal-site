@@ -1,0 +1,33 @@
+.site-header {
+    background: rebeccapurple;
+    margin-bottom: 1.45rem;
+}
+
+.site-header .header-body {
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+}
+
+.site-header .header-body h1 {
+    margin: 0;
+    display: inline-block;
+    text-shadow: #000 2px 2px 4px;
+}
+
+.site-header .header-link {
+    color: white;
+    text-decoration: none;
+}
+
+.site-header .github-link {
+    position: absolute;
+    top: 20px;
+    right: .5em;
+    transform: rotate(45deg);
+}
+
+.site-header .github-link img {
+    width: 80px;
+}

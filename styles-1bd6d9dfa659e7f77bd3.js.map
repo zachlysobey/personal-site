@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/components/external-articles.module.css"],"names":["module","exports"],"mappings":"mGACAA,EAAOC,QAAU,CAAC,iBAAmB","file":"styles-1bd6d9dfa659e7f77bd3.js","sourcesContent":["// extracted by mini-css-extract-plugin\nmodule.exports = {\"externalArticles\":\"external-articles-module--externalArticles--2mzwY\"};"],"sourceRoot":""}

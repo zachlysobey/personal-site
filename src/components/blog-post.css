@@ -6,14 +6,24 @@
 }
 
 .blog-post.preview a {
+    position: relative;
     text-decoration: none;
 }
 .blog-post.preview a,
 .blog-post.preview a:visited {
     color: rebeccapurple;
 }
-.blog-post.preview a:hover {
+.blog-post.preview a:hover,
+.blog-post.preview a:focus {
+    outline: none;
     text-decoration: underline;
+}
+.blog-post.preview a:focus::before {
+    content: '▸';
+    font-size: 1em;
+    position: absolute;
+    animation: back-and-forth .5s infinite alternate;
+    left: -1em;
 }
 
 .blog-post.preview .tag-list {
@@ -27,4 +37,9 @@
     padding: .125em;
     margin-right: .125em;
     display: inline-block;
+}
+
+@keyframes back-and-forth {
+    from { left: -1em; }
+    to { left: -.5em; }
 }

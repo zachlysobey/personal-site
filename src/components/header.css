@@ -27,6 +27,18 @@
     color: white;
     text-decoration: none;
 }
+:focus {
+    outline: auto 5px rebeccapurple;
+}
+.site-header :focus {
+    outline: auto 5px white;
+}
+
+.site-header nav :focus,
+.site-header h1 :focus {
+    text-decoration: underline overline;
+    outline: none;
+}
 
 .site-header .github-link {
     position: absolute;

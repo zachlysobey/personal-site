@@ -18,6 +18,11 @@ export default ({ data }) => {
     return (
         <Layout>
             <div className={asideStyles.aside}>
+                <img
+                    alt=""
+                    src="./zach-mustache-mountain.jpg"
+                    style={{ float: 'right', paddingLeft: '1em' }}
+                />
                 <h2>Hello World!</h2>
                 <p>
                     I don't really advertise the existence of this blog, nor do

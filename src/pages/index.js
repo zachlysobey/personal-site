@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import BlogPostPreview from '../components/blog-post-preview'
+import asideStyles from '../components/aside.module.css'
 
 export default ({ data }) => {
     const { edges: posts } = data.allMarkdownRemark
@@ -16,6 +17,23 @@ export default ({ data }) => {
         ))
     return (
         <Layout>
+            <div className={asideStyles.aside}>
+                <h2>Hello World!</h2>
+                <p>
+                    I don't really advertise the existence of this blog, nor do
+                    I have anyone visiting it, and as such, I have not had much
+                    motivation to keep the quality very high.
+                </p>
+                <p>
+                    <strong>Here be dragons. </strong>
+                    Expect to see incomplete work, un-editted prose, and
+                    half-baked ideas below.
+                </p>
+                <p>
+                    That said, I've been putting more work into it lately, and
+                    it may yet become something that I am proud of. Stay tuned!
+                </p>
+            </div>
             <div className="blog-posts">{blogPostsContent}</div>
         </Layout>
     )

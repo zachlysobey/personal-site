@@ -5,17 +5,19 @@ export class Video extends React.Component {
         return false
     }
     render() {
-        const { id } = this.props
+        const { id, width = '100%', height = '100%' } = this.props
+        if (!id) return null
         return (
-            <div>
+            <>
                 <iframe
-                    width="100%"
-                    height="250"
+                    width={width}
+                    height={height}
                     src={'https://www.youtube.com/embed/' + id}
+                    title={`yt-video-${id}`}
                     frameBorder="0"
                     allowFullScreen="true"
                 />
-            </div>
+            </>
         )
     }
 }

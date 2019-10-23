@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { Video } from './youtube-video'
+
 export default ({ frontmatter, excerpt }) => (
     <div className="blog-post preview">
         <h2>
@@ -9,6 +11,8 @@ export default ({ frontmatter, excerpt }) => (
         </h2>
 
         <p>{excerpt}</p>
+
+        <Video id={frontmatter.youtube} width={'100%'} height={'210px'}></Video>
 
         <ul className="tag-list">
             {(frontmatter.tags || []).map((tag, i) => (

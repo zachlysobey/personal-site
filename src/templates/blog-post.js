@@ -3,8 +3,13 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 
+import { Video } from '../components/youtube-video'
+
 export default function Template({ data }) {
     const { markdownRemark: post } = data
+    const youtubeId = post.frontmatter.youtube
+    console.log({ frontmatter: post.frontmatter })
+
     return (
         <Layout>
             <div className="blog-post-container">
@@ -18,6 +23,13 @@ export default function Template({ data }) {
                         className="blog-post-content"
                         dangerouslySetInnerHTML={{ __html: post.html }}
                     />
+                    <div style={{ height: '480px', width: '640px' }}>
+                        <Video
+                            id={youtubeId}
+                            width={'640px'}
+                            height={'420px'}
+                        ></Video>
+                    </div>
                 </div>
             </div>
         </Layout>
@@ -32,6 +44,8 @@ export const pageQuery = graphql`
                 date(formatString: "MMMM DD, YYYY")
                 path
                 title
+                tags
+                youtube
             }
         }
     }

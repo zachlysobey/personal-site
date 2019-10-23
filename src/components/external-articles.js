@@ -2,10 +2,10 @@ import React from 'react'
 
 import * as data from '../data'
 
-import styles from './external-articles.module.css'
+import asideStyles from './aside.module.css'
 
 export const ExternalArticles = () => (
-    <div className={styles.externalArticles}>
+    <div className={asideStyles.aside}>
         <h3>External Articles</h3>
 
         <p>Articles and things I've written that are hosted elsewhere.</p>

@@ -2,8 +2,10 @@ import React from 'react'
 
 import * as data from '../data'
 
+import asideStyles from './aside.module.css'
+
 export const Bands = () => (
-    <div>
+    <div className={asideStyles.aside}>
         <h3>Bands I've Been in</h3>
 
         <ul>

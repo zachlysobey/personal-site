@@ -6,6 +6,8 @@ import asideStyles from '../components/aside.module.css'
 
 export default ({ data }) => {
     const { edges: posts } = data.allMarkdownRemark
+    const tweets = data.allTwitterStatusesUserTimelineMyTweets.nodes
+
     const blogPostsContent = posts
         .filter((post) => post.node.frontmatter.title.length > 0)
         .map(({ node }) => (
@@ -39,6 +41,20 @@ export default ({ data }) => {
                     it may yet become something that I am proud of. Stay tuned!
                 </p>
             </div>
+
+            <div className="tweets">
+                <ul>
+                    {tweets.map((tweet, i) => {
+                        const url = `https://twitter.com/zlysobey/status/${tweet.id_str}`
+                        return (
+                            <li key={i}>
+                                <a href={url}>{tweet.full_text}</a>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+
             <div className="blog-posts">{blogPostsContent}</div>
         </Layout>
     )
@@ -58,6 +74,16 @@ export const pageQuery = graphql`
                         youtube
                         tags
                     }
+                }
+            }
+        }
+        allTwitterStatusesUserTimelineMyTweets {
+            nodes {
+                id
+                id_str
+                full_text
+                user {
+                    name
                 }
             }
         }

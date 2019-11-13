@@ -6,8 +6,11 @@ import asideStyles from '../components/aside.module.css'
 
 export default ({ data }) => {
     const { edges: posts } = data.allMarkdownRemark
+    const hasTitle = (post) => post.node.frontmatter.title.length > 0
+    const isNotDraft = (post) => !post.node.frontmatter.draft
     const blogPostsContent = posts
-        .filter((post) => post.node.frontmatter.title.length > 0)
+        .filter(hasTitle)
+        .filter(isNotDraft)
         .map(({ node }) => (
             <BlogPostPreview
                 key={node.id}
@@ -57,6 +60,7 @@ export const pageQuery = graphql`
                         path
                         youtube
                         tags
+                        draft
                     }
                 }
             }

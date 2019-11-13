@@ -20,7 +20,7 @@ export default ({ data }) => {
         <Layout>
             <div className={asideStyles.aside}>
                 <img
-                    alt=""
+                    alt="Zach's photo with a mustache on a mountain"
                     src="./zach-mustache-mountain.jpg"
                     style={{ float: 'right', paddingLeft: '1em' }}
                 />

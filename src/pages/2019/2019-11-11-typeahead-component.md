@@ -3,6 +3,7 @@ path: "/2019-11-11-typeahead-component"
 date: "2019-11-11"
 title: "Authoring an autocomplete / typeahead react component"
 tags: ["programming", "javascript", "react", "typeahead", "autocomplete", "component"]
+draft: true
 ---
 
 ## NOTE: this is just a draft -- published to Master & deployed because no one reads this blog anyway ;)

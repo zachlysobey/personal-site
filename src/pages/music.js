@@ -8,11 +8,7 @@ import BlogPostPreview from '../components/blog-post-preview'
 
 export default ({ data }) => {
     const isPost = (post) => post.node.frontmatter.title.length > 0
-    const posts = data.allMarkdownRemark.edges.filter(isPost)
-    const isMusicPost = (post) =>
-        post.node.frontmatter.tags &&
-        post.node.frontmatter.tags.includes('music')
-    const musicPosts = posts.filter(isMusicPost)
+    const musicPosts = data.allMarkdownRemark.edges.filter(isPost)
 
     return (
         <Layout>
@@ -37,7 +33,12 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
     query MusicQuery {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter___date] }
+            filter: {
+                frontmatter: { draft: { ne: true }, tags: { in: "music" } }
+            }
+        ) {
             edges {
                 node {
                     excerpt(pruneLength: 250)

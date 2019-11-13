@@ -6,9 +6,7 @@ import Layout from '../components/layout'
 import BlogPostPreview from '../components/blog-post-preview'
 
 export default ({ data }) => {
-    const isPost = (post) => post.node.frontmatter.title.length > 0
-    const isDraft = (post) => post.node.frontmatter.draft
-    const posts = data.allMarkdownRemark.edges.filter(isPost).filter(isDraft)
+    const posts = data.allMarkdownRemark.edges
     return (
         <Layout>
             <h2>(DRAFTS)</h2>
@@ -28,7 +26,10 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
     query DraftsQuery {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter___date] }
+            filter: { frontmatter: { draft: { eq: true } } }
+        ) {
             edges {
                 node {
                     excerpt(pruneLength: 250)
@@ -37,6 +38,7 @@ export const pageQuery = graphql`
                         title
                         date(formatString: "MMMM DD, YYYY")
                         path
+                        youtube
                         tags
                         draft
                     }

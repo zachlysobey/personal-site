@@ -6,12 +6,9 @@ import BlogPostPreview from '../components/blog-post-preview'
 import asideStyles from '../components/aside.module.css'
 
 export default ({ data }) => {
-    const { edges: posts } = data.allMarkdownRemark
-    const hasTitle = (post) => post.node.frontmatter.title.length > 0
-    const isNotDraft = (post) => !post.node.frontmatter.draft
-    const blogPostsContent = posts
-        .filter(hasTitle)
-        .filter(isNotDraft)
+    const isPost = (post) => post.node.frontmatter.title.length > 0
+    const blogPostsContent = data.allMarkdownRemark.edges
+        .filter(isPost)
         .map(({ node }) => (
             <BlogPostPreview
                 key={node.id}
@@ -50,7 +47,10 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
     query IndexQuery {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter___date] }
+            filter: { frontmatter: { draft: { ne: true } } }
+        ) {
             edges {
                 node {
                     excerpt(pruneLength: 250)

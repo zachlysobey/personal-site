@@ -8,12 +8,7 @@ import BlogPostPreview from '../components/blog-post-preview'
 
 export default ({ data }) => {
     const isPost = (post) => post.node.frontmatter.title.length > 0
-    const posts = data.allMarkdownRemark.edges.filter(isPost)
-    const isProgrammingPost = (post) =>
-        post.node.frontmatter.tags &&
-        post.node.frontmatter.tags.includes('programming')
-    const isNotDraft = (post) => !post.node.frontmatter.draft
-    const programmingPosts = posts.filter(isProgrammingPost).filter(isNotDraft)
+    const programmingPosts = data.allMarkdownRemark.edges.filter(isPost)
     return (
         <Layout>
             <ExternalArticles />
@@ -34,7 +29,15 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
     query ProgrammingQuery {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter___date] }
+            filter: {
+                frontmatter: {
+                    draft: { ne: true }
+                    tags: { in: "programming" }
+                }
+            }
+        ) {
             edges {
                 node {
                     excerpt(pruneLength: 250)

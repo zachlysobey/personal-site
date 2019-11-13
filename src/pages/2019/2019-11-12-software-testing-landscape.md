@@ -10,7 +10,7 @@ draft: true
 
 - Manual Tests
 - Unit Tests
-- Integraion tests
+- Integration tests
 - E2E tests
 - Browser automation tests
 - Functional tests
@@ -20,8 +20,15 @@ draft: true
 - User tests
 - A/B tests
 - Accessibility testing
+- Exploratory testing: https://www.agilealliance.org/glossary/exploratory-testing
 
 ## Styles of testing
 
 - BDD
 - TDD
+
+## Testing tools
+
+- Selenium WebDriver
+- Cucumber / Gherkin
+- X-Unit

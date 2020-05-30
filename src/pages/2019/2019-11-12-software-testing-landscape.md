@@ -21,6 +21,11 @@ draft: true
 - A/B tests
 - Accessibility testing
 - Exploratory testing: https://www.agilealliance.org/glossary/exploratory-testing
+- Performance testing
+- Penetration testing
+- Chaos Testing:
+    - Chaos Monkey
+    - https://www.gremlin.com/
 
 ## Styles of testing
 
